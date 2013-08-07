@@ -1,0 +1,17 @@
+RTBench
+=======
+
+Industrial Real time micro benchmarks suit and runtime
+v0.32b
+
+Usage:
+make TARGET=target
+to build for a specific target
+make TARGET=target clean
+to clean up binaries before would not hurt
+
+make TARGET=target run
+to run the benchmarks. Results will be placed in results dir, and printed on screen. Please see the source of the respective sub-benchmarks and Docs for details.
+
+Targets supported are __linux__, __baremetal__, __baremetal_standalone__. __vxworks__ to be added in some future version
+To run baremetal targets, please see config steps in a README in tools/src/baremetal
