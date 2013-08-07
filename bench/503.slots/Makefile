@@ -10,7 +10,7 @@ ifeq ($(TARGET), __linux__)
 endif
 else
 ifeq ($(TARGET), __linux__)
-	$(CC) $(CFLAGS) $(LDFLAGS) -D_GNU_SOURCE -lm ../common/common.o src/main.c -o bin/test.x
+	@$(CC) $(CFLAGS) $(LDFLAGS) -D_GNU_SOURCE -lm ../common/common.o src/main.c -o bin/test.x
 endif
 endif
 

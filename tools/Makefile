@@ -1,6 +1,7 @@
 
 
 all: 
+	@make -C src/disturber TARGET=__linux__
 ifeq ($(TARGET), __baremetal__)
 	@make -C src TARGET=__baremetal__
 endif
