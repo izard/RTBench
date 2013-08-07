@@ -47,7 +47,6 @@
 #include <mp.h>
 #include <spinlock.h>
 #include <timer.h>
-#include <shell.h>
 #include "mwaitTester.h"
 #define rdtscll(val)    __asm__ __volatile__("lfence;rdtsc" : "=A" (val))
 
