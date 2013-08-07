@@ -1,0 +1,15 @@
+Starting tests on linux Mon Jul 29 10:50:37 EDT 2013
+ Motion control simulation 
+Averages and worst case are 2073.68 2100
+ PLC compiler backend simulation 
+Averages and worst case are 32.05 33
+ Synchronization test 
+Averages and worst case are 1836.87 2720
+
+Starting tests on baremetal Mon Jul 29 10:51:52 EDT 2013
+ Motion control simulation 
+Averages and worst case are 1754.8 2080
+ PLC compiler backend simulation 
+Averages and worst case are 28.8 32
+ Synchronization test 
+Averages and worst case are 1737.1 1763
