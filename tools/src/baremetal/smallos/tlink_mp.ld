@@ -46,3 +46,4 @@ SECTIONS
 } 
 
 CTORS_ADDR   = ADDR(.ctors);
+

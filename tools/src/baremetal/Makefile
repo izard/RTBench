@@ -1,6 +1,6 @@
 
 all: 
-  @make -C phymem
+	@make -C phymem
 ifeq ($(TARGET), __baremetal__)
 	@make -C smallos clean
 	@make -C smallos LWRTE_CPU2=1
@@ -16,3 +16,4 @@ endif
 clean:
 	@make -C phymem clean
 	@make -C smallos clean
+

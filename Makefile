@@ -3,7 +3,7 @@
 
 ifeq ($(TARGET), __linux__)
 all:
-  @make -C bench TARGET=__linux__
+	@make -C bench TARGET=__linux__
 	@make -C tools TARGET=__linux__
 
 run: 
@@ -43,3 +43,4 @@ endif
 clean:
 	@make -C bench clean
 	@make -C tools clean
+

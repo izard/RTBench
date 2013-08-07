@@ -24,3 +24,4 @@ echo -n "Test:" $2 ":"
 echo `../../../bin/results.sh $NAME`
 
 killall -9 $3
+

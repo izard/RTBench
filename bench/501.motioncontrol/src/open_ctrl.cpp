@@ -75,7 +75,7 @@ class DriverObj {
 
     float pid_update(float set)
     {
-  float tmp, e, p, ret, tmpi;
+	float tmp, e, p, ret, tmpi;
 	e = this->e;
 	this->e = set - speed;
 	tmpi = this->i + this->e;
@@ -163,7 +163,7 @@ void MyCtrl::ctrl (void)
 //   volatile unsigned char tmp = *((volatile unsigned char *) (SOC_BAR2 + 0x014));
 #endif
 	// read from fake data
-
+	
 	// calculate
 
 	myDrives[i].last_position = myDrives[i].position;
@@ -208,3 +208,4 @@ unsigned int test_ctrl2()
     return test_ctrl();
 }
 }
+

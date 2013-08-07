@@ -89,7 +89,7 @@ static struct rte_ring_list ring_list = TAILQ_HEAD_INITIALIZER(ring_list);
 #ifdef __baremetal__
 struct test_ring
 {
-  struct rte_ring ring;
+	struct rte_ring ring;
 	unsigned char filler[32768 * 6 * sizeof(void *)];
 };
 
@@ -181,3 +181,4 @@ rte_ring_set_water_mark(struct rte_ring *r, unsigned count)
 	r->prod.watermark = count;
 	return 0;
 }
+

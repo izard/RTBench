@@ -48,7 +48,7 @@ typedef unsigned long ulong;
 #include <sys/io.h>
 #include <sys/mman.h>
 
-#define SPAN (1<<10)  	// 1KB
+#define SPAN (1<<10)		// 1KB
 #define CACHE_ALIGN 0xFFF
 #define VERSION 1.0
 

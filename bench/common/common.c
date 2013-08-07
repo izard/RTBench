@@ -41,3 +41,4 @@ __inline__ ticks getticks(void)
 
      return (((ticks)a) | (((ticks)d) << 32));
 }
+

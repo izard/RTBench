@@ -1,6 +1,6 @@
 ifeq ($(TARGET), __linux__)
 run:
-  @../../tools/bin/runTest.sh 100 $(BENCHMARK) ../../tools/bin/stream.x
+	@../../tools/bin/runTest.sh 100 $(BENCHMARK) ../../tools/bin/stream.x
 endif
 ifeq ($(TARGET), __baremetal__)
 run::
@@ -19,3 +19,5 @@ ifeq ($(TARGET), __linux__)
 	@$(CC) $(CFLAGS) $(LDFLAGS) -lm ../common/common.o bin/$(OBJFILE) -o bin/test.x
 endif
 endif
+
+

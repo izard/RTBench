@@ -139,7 +139,7 @@ int main(int argc, const char *argv[])
                 tempaddress = (unsigned long) mmap(NULL, map_len, PROT_READ|PROT_WRITE, MAP_SHARED, fd, (off_t)physicaladdress);   
 
                 if(tempaddress == (unsigned long)MAP_FAILED) //check if it worked
-                {  
+                {	
                     perror("Mapping memory for absolute memory access failed.\n");
                     return -3;
                 }
@@ -241,4 +241,5 @@ int main(int argc, const char *argv[])
 
     return 0;
 }
+
 

@@ -40,7 +40,7 @@ APP_DIR        = $(PWD)/apps
 TEST_OBJS := $(shell ls ../../../../bench/5*/bin/*.o)
 
 C_SRC_COMMON=$(MAIN_DIR)/isr.o $(MAIN_DIR)/gdt.o $(MAIN_DIR)/serial.o \
-  		 $(MAIN_DIR)/utilities.o $(MAIN_DIR)/pci.o $(MAIN_DIR)/lwrte.o \
+			 $(MAIN_DIR)/utilities.o $(MAIN_DIR)/pci.o $(MAIN_DIR)/lwrte.o \
 			 $(MAIN_DIR)/spinlock.o $(MAIN_DIR)/cppsupport.o
 ASM_SRC=$(ASM_DIR)/boot.o $(ASM_DIR)/asm_support.o
 #ifneq ($(LWRTE), SMP)
@@ -142,3 +142,4 @@ link_hlt:
 
 dis_hlt:
 	@$(SCRIPTS_DIR)/parser.py -i halt -o $(BOOTLOADER_DIR)/halt.bin >/dev/null 2>&1
+

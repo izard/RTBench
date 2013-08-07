@@ -1,3 +1,4 @@
+
 include ../../Makefile.inc
 
 BENCHMARK="PLC compiler backend simulation"
@@ -6,3 +7,4 @@ OBJFILE=main_502.o
 BAREMETAL_SIGNAL=25
 
 include ../Makefile.inc
+

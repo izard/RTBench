@@ -115,7 +115,7 @@ printf
           if(!received1)
           {
             if(!rte_ring_mc_dequeue(ring1, (void **)&msg1))
-      {
+	    {
 #ifdef DEBUG
 #ifdef __baremetal__
 kprintf
@@ -358,3 +358,4 @@ int main_503_3()
 	io_func((void*)&arg4);
 }
 #endif
+

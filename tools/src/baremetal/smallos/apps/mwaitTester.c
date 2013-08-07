@@ -124,7 +124,7 @@ void mwaitLoop()
                 asm volatile("hlt");
                 break;
             case CMD_501:
-  	{
+		{
 		unsigned long long int t0,t1;
 		*((unsigned int*)monAddr + 10) = 0;
 		t0 = main_501();

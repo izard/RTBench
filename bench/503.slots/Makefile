@@ -2,7 +2,7 @@ include ../../Makefile.inc
 
 
 test: $(SOURCES)
-  @$(CC) $(CFLAGS) -c src/main.c -o bin/$(OBJFILE)
+	@$(CC) $(CFLAGS) -c src/main.c -o bin/$(OBJFILE)
 ifdef CPP_FILE
 	@$(CPP) $(CCFLAGS) -c src/$(CPP_FILE).cpp -o bin/$(CPP_FILE).o
 ifeq ($(TARGET), __linux__)
@@ -31,3 +31,4 @@ ifeq ($(TARGET), __baremetal__)
 run::
 	@../../tools/bin/runBaremetalTest3.sh 100 $(BENCHMARK) $(BAREMETAL_SIGNAL) ../../tools/bin/stream.x
 endif
+

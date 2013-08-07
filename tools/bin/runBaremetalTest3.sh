@@ -1,6 +1,5 @@
 #!/bin/bash
 # FIXME AK to refactor from write once mode
-# Runs baremetal test in 3 threads
 
 if [ $# -ne 4 ]
 then
@@ -35,3 +34,4 @@ echo -n "Test:" $2 ":"
 echo `../../../../bin/results.sh $NAME`
 
 killall -9 $3
+

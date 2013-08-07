@@ -1,3 +1,4 @@
+
 include ../../Makefile.inc
 
 BENCHMARK="Motion control simulation"
@@ -7,3 +8,4 @@ OBJFILE=main_501.o
 BAREMETAL_SIGNAL=24
 
 include ../Makefile.inc
+

@@ -47,7 +47,7 @@ int main_501()
 int main()
 #endif
 {
-  int i;
+	int i;
 	for (i = 0; i < 3; i++) // warm up cache
 		test_ctrl2();
 	minmax[0] = 1000000;
@@ -63,3 +63,4 @@ return 0;
 return minmax[1];
 #endif
 }
+

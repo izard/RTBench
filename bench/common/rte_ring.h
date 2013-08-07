@@ -126,7 +126,7 @@ unsigned int src)
  * A structure that stores the ring statistics (per-lcore).
  */
 struct rte_ring_debug_stats {
-  uint64_t enq_success_bulk; /**< Successful enqueues number. */
+	uint64_t enq_success_bulk; /**< Successful enqueues number. */
 	uint64_t enq_success_objs; /**< Objects successfully enqueued. */
 	uint64_t enq_quota_bulk;   /**< Successful enqueues above watermark. */
 	uint64_t enq_quota_objs;   /**< Objects enqueued above watermark. */
