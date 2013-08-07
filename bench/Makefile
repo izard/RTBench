@@ -1,4 +1,4 @@
-BENCHMARKS = 501.motioncontrol 502.linearcode 503.slots 504.intjitter
+BENCHMARKS = 501.motioncontrol 502.linearcode 503.slots
 .PHONY: all $(BENCHMARKS) common
 
 all: $(BENCHMARKS) common
