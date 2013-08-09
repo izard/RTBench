@@ -1,6 +1,6 @@
-To run the aremetal target on a Linux host,
+To run the baremetal target on a Linux host,
 boot linux with 128 MB memory hole, that will be used by baremetal environment:
-memmap=0x128M$0x18000000
+memmap=0x80M$0x18000000
 Tested with kernels up to 3.0.80, later kernel may have a bug with a memory hole allocation! (You will know if 
 that is the case, the kernel will crash on boot)
 
