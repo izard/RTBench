@@ -2,7 +2,7 @@ To run the baremetal target on a Linux host,
 boot linux with 128 MB memory hole, that will be used by baremetal environment:
 memmap=0x80M$0x18000000
 Tested with kernels up to 3.0.80, later kernel may have a bug with a memory hole allocation! (You will know if 
-that is the case, the kernel will crash on boot)
+that is the case, the kernel will crash on boot). Upd: tested, works on 3.9.5-301.fc19
 
 The baremetal tests offline cores 1-3, e.g.
 # echo 0>/sys/devices/system/cpu/cpu1/online
